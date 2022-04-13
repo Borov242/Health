@@ -1,0 +1,16 @@
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QVBoxLayout, QHBoxLayout
+
+app = QApplication(list('health'))
+window = QWidget()
+vl = QVBoxLayout()
+l1 = QLabel('')
+l2 = QLabel('xfgvcxgf')
+b = QPushButton('Начать')
+vl.addWidget(l1, alignment = Qt.AlignLeft)
+vl.addWidget(l2, alignment = Qt.AlignLeft)
+vl.addWidget(b, alignment = Qt.AlignCenter)
+window.setLayout(vl)
+
+window.show()
+app.exec_()
